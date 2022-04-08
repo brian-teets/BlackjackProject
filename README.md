@@ -4,7 +4,7 @@
 
 ### Application Overview 
 
-Use classes to create a functional command line blackjack game. Leave the game's functionality until the end, first get the class structure figured out. From here you can implement methods and fields to store data you think you would need during a blackjack game. To help get started, read through the rules [here] [wiki]. 
+Use classes to create a functional command line blackjack game. Leave the game's functionality until the end, first get the class structure figured out. From here you can implement methods and fields to store data you think you would need during a blackjack game. To help get started, read through the rules [here][wiki]. 
 
 A Blackjack [UML Diagram](/BlackjackUML.pdf) was provided as a starting point. But, this will need to be expanded on. 
 
