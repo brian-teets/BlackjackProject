@@ -1,6 +1,6 @@
 ## Getting started with Blackjack
 
-Let's think about the class structure. The fundamental element of a blackjack game is a deck of cards. Decks are made up of 52 cards, so we can make a class that is a card element which consists of a suit and rank. With this class wouldn't a deck be a collection of 52 card objects? Feel free to look at the labs from last week where you sorted a deck of cards to get a feel for the basic elements.
+Let's think about the class structure. The fundamental element of a blackjack game is a deck of cards. Decks are made up of 52 cards, so we can make a class that is a card element which consists of a suit and rank. Within this class wouldn't a deck be a collection of 52 card objects? Feel free to look at the labs from last week where you sorted a deck of cards to get a feel for the basic elements.
 
 In a game of blackjack the dealer and a player have a hand of cards. A hand of cards is just the cards that have been dealt to an individual (and thus removed from the deck). This could be a class as well that would consist of a collection type to store the currently dealt cards of each player.
 
