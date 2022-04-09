@@ -32,7 +32,7 @@ public class Dealer {
 	}
 	
 	public void clearDeck() {
-		
+		deck.clearDeck();
 	}
 
 
@@ -40,6 +40,5 @@ public class Dealer {
 	public String toString() {
 		return "Dealer has current value of " + dealerHand; 
 	}
-	
 	
 }
