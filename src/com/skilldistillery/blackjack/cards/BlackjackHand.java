@@ -34,10 +34,14 @@ public class BlackjackHand extends Hand {
 	}
 	
 	public boolean isBust() { 
-		// When either the player's hand OR the dealer's hand goes over value of 21
-		
-		
-		return false;
+		// When either the player's hand OR the dealer's hand goes 
+			// over value of 21
+		if( getHandValue() > 21) {
+			return true;
+		}
+		else {
+			return false;
+		} 
 	}
 	
 //	public boolean isBlackjack() { // stretch goal 
