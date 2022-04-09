@@ -6,13 +6,10 @@ public class Dealer {
 	private Deck deck;
 	private BlackjackHand dealerHand;
 	
-	
-
 	public Dealer() {
 		Dealer dealer = new Dealer();
 		this.deck = new Deck();
 		this.dealerHand = new BlackjackHand(); 
-		
 	}
 
 	public BlackjackHand getDealerHand() {
@@ -25,6 +22,10 @@ public class Dealer {
 	
 	public void shuffleDeck() {
 		deck.shuffleDeck();
+	}
+	
+	public void dealNewHand() { // per Blackjack rules, player and dealer begin with 2 cards 
+		
 	}
 	
 	public void dealACard(Player player) {
