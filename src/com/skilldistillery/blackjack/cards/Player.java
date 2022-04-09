@@ -9,10 +9,7 @@ public class Player {
 	public BlackjackHand getPlayerHand() {
 		return playerHand;
 	}
-
-	public void setPlayerHand(BlackjackHand playerHand) {
-		this.playerHand = playerHand;
-	}
+	
 
 	@Override
 	public String toString() {

@@ -6,9 +6,7 @@ public abstract class Hand {
 	
 	protected List<Card> handOfCards;
 
-	public Hand(List<Card> handOfCards) {
-		this.handOfCards = handOfCards;
-	}
+	public Hand() { } 
 	
 	public void addCard(Card card) { } // add a card to handOfCards being played 
 	
