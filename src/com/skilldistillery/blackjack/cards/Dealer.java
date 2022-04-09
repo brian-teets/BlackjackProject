@@ -35,7 +35,6 @@ public class Dealer {
 		deck.clearDeck();
 	}
 
-
 	@Override
 	public String toString() {
 		return "Dealer has current value of " + dealerHand; 
