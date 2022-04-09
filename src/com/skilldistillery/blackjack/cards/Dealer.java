@@ -37,6 +37,10 @@ public class Dealer extends Player {
 		deck.clearDeck();
 	}
 	
+	public void clearDealerHand() {
+		this.playerHand.clear();
+	}
+	
 	public void getDealerHandValue() {
 		this.playerHand.getHandValue();
 	}

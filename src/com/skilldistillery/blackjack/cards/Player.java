@@ -24,6 +24,10 @@ public class Player {
 		this.playerHand.getHandValue(); 
 	}
 	
+	public void clearPlayerHand() {
+		this.playerHand.clear();
+	}
+	
 	public void displayPlayerHand() {
 		System.out.println( playerHand.toString() + " currently has " + playerHand.getHandValue() ); 
 	}
@@ -32,5 +36,4 @@ public class Player {
 	public String toString() {
 		return "Player has current value of " + playerHand + " in hand";
 	}
-	
 }
