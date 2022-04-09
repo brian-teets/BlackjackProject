@@ -1,13 +1,11 @@
 package com.skilldistillery.blackjack.cards;
 
 public class Dealer extends Player {
-	// Has-A hand
 	
 	private Deck deck;
 	
 	
 	public Dealer() {
-		Dealer dealer = new Dealer();
 		this.deck = new Deck();
 		this.playerHand = new BlackjackHand(); 
 	}
