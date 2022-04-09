@@ -20,6 +20,10 @@ public class Player {
 		this.playerHand = playerHand;
 	}
 	
+	public void getPlayerHandValue() {
+		this.playerHand.getHandValue(); 
+	}
+	
 	public void displayPlayerHand() {
 		System.out.println( playerHand.toString() + " currently has " + playerHand.getHandValue() ); 
 	}

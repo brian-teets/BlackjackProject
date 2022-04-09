@@ -9,7 +9,7 @@ public class Dealer extends Player {
 	public Dealer() {
 		Dealer dealer = new Dealer();
 		this.deck = new Deck();
-		playerHand = new BlackjackHand();  
+		this.playerHand = new BlackjackHand(); 
 	}
 
 	public BlackjackHand getDealerHand() {
@@ -24,7 +24,8 @@ public class Dealer extends Player {
 		deck.shuffleDeck();
 	}
 	
-	public void dealNewHand(Player player) { // per Blackjack rules, player and dealer begin with 2 cards 
+	public void dealNewHand(Player player) { 
+		// per Blackjack rules, player and dealer begin with 2 cards 
 		for(int i = 0; i < 2; i ++) {
 			player.addToHand( deck.dealCard() );  
 		}
@@ -36,6 +37,10 @@ public class Dealer extends Player {
 	
 	public void clearDeck() {
 		deck.clearDeck();
+	}
+	
+	public void getDealerHandValue() {
+		this.playerHand.getHandValue();
 	}
 
 	@Override
