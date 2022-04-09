@@ -19,12 +19,12 @@ public class BlackjackHand extends Hand {
 	
 	@Override
 	public void addCard(Card card) {
-		handOfCards.add(card);
+		
 	}
 
 	@Override
 	public void clear() {
-		handOfCards.remove(getHandValue()); 
+		
 	}
 
 	@Override

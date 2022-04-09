@@ -9,17 +9,30 @@ public class Dealer {
 	
 
 	public Dealer() {
+		Dealer dealer = new Dealer();
 		this.deck = new Deck();
 		this.dealerHand = new BlackjackHand(); 
 		
 	}
 
 	public BlackjackHand getDealerHand() {
-		return dealerHand;
+		return dealerHand; 
 	}
 	
-	public Deck getDeck() {
-		return deck;
+	public void getDeck() {
+		deck.createDeck();
+	}
+	
+	public void shuffleDeck() {
+		deck.shuffleDeck();
+	}
+	
+	public void dealACard(Player player) {
+		player.addToHand( deck.dealCard() ); 
+	}
+	
+	public void clearDeck() {
+		
 	}
 
 
