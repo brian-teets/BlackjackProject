@@ -1,19 +1,19 @@
 package com.skilldistillery.blackjack.cards;
 
-public class Dealer {
+public class Dealer extends Player {
 	// Has-A hand
 	
 	private Deck deck;
-	private BlackjackHand dealerHand;
+	
 	
 	public Dealer() {
 		Dealer dealer = new Dealer();
 		this.deck = new Deck();
-		this.dealerHand = new BlackjackHand(); 
+		playerHand = new BlackjackHand();  
 	}
 
 	public BlackjackHand getDealerHand() {
-		return dealerHand; 
+		return playerHand; 
 	}
 	
 	public void getDeck() {
@@ -24,8 +24,10 @@ public class Dealer {
 		deck.shuffleDeck();
 	}
 	
-	public void dealNewHand() { // per Blackjack rules, player and dealer begin with 2 cards 
-		
+	public void dealNewHand(Player player) { // per Blackjack rules, player and dealer begin with 2 cards 
+		for(int i = 0; i < 2; i ++) {
+			player.addToHand( deck.dealCard() );  
+		}
 	}
 	
 	public void dealACard(Player player) {
@@ -38,7 +40,7 @@ public class Dealer {
 
 	@Override
 	public String toString() {
-		return "Dealer has current value of " + dealerHand; 
+		return "Dealer has current value of " + playerHand; 
 	}
 	
 }

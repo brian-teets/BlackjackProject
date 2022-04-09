@@ -9,6 +9,7 @@ public class BlackjackApplication {
 	}
 	
 	public void run() {
+		// TODO: upon new game, call dealNewHand() and deal to player and dealer 
 		
 	}
 

@@ -2,7 +2,7 @@ package com.skilldistillery.blackjack.cards;
 
 public class Player {
 	// Has-A hand
-	private BlackjackHand playerHand;
+	protected BlackjackHand playerHand;
 	
 	public Player() {
 		this.playerHand = new BlackjackHand(); 
