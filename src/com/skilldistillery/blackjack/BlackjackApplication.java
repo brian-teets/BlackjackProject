@@ -33,20 +33,21 @@ public class BlackjackApplication {
 
 	public void gameSimulator() {
 		boolean keepGoing = true;
+		Scanner scanner = new Scanner(System.in);
+		Dealer dealer = new Dealer();
+		Player player = new Player();
+		System.out.println("The dealer will deal you 2 cards to begin the game.");
+		System.out.println("Dealing now... ");
+		System.out.println();
+		dealer.getDeck();
+		dealer.shuffleDeck();
+		dealer.dealNewHandToPlayer(player); 
+		System.out.println();
+		System.out.println("Now the dealer will deal to self.");
+		dealer.dealNewHandToDealer(dealer);
+		System.out.println();
+		
 		while(keepGoing) {
-			Scanner scanner = new Scanner(System.in);
-			Dealer dealer = new Dealer();
-			Player player = new Player();
-			System.out.println("The dealer will deal you 2 cards to begin the game.");
-			System.out.println("Dealing now... ");
-			System.out.println();
-			dealer.getDeck();
-			dealer.shuffleDeck();
-			dealer.dealNewHandToPlayer(player); 
-			System.out.println();
-			System.out.println("Now the dealer will deal to self.");
-			dealer.dealNewHandToDealer(dealer);
-			System.out.println();
 			if (player.getPlayerHandValue() == 21 || dealer.getDealerHandValue() == 21) {
 				int winnerValue = 0;
 				if (player.getPlayerHandValue() > dealer.getDealerHandValue()) {
