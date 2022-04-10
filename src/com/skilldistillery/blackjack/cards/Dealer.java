@@ -37,7 +37,7 @@ public class Dealer extends Player {
 		}
 		System.out.println("Dealer has " + 
 		this.playerHand.handOfCards.get(1) + 
-		"and has one card hidden."); 
+		" and has one card hidden."); 
 		// trying to only show dealer's second card 
 	}
 	
@@ -53,13 +53,15 @@ public class Dealer extends Player {
 		this.playerHand.clear();
 	}
 	
-	public void getDealerHandValue() {
-		this.playerHand.getHandValue();
+	public int getDealerHandValue() {
+		int total =this.playerHand.getHandValue();
+		return total;
 	}
 
 	@Override
 	public String toString() {
-		return "Dealer has current value of " + playerHand; 
+//		return "Dealer has current value of " + playerHand; 
+		return "Dealer ";
 	}
 	
 }

@@ -7,16 +7,16 @@ public class BlackjackApplication {
 
 	public static void main(String[] args) {
 		BlackjackApplication app = new BlackjackApplication();
-		app.run(); 
+		app.run();
 
 	}
-	
+
 	public void run() {
 		gameGreeting();
-		// TODO: upon new game, call dealNewHand() and deal to player and dealer 
+		// TODO: upon new game, call dealNewHand() and deal to player and dealer
 		gameSimulator();
 	}
-	
+
 	public void gameGreeting() {
 		System.out.println();
 		System.out.println("       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
@@ -28,7 +28,7 @@ public class BlackjackApplication {
 		System.out.println("       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		System.out.println();
 	}
-	
+
 	public void gameSimulator() {
 		Dealer dealer = new Dealer();
 		Player player = new Player();
@@ -40,8 +40,18 @@ public class BlackjackApplication {
 		dealer.dealNewHandToPlayer(player); 
 		System.out.println("Now the dealer will deal to himself.");
 		dealer.dealNewHandToDealer(dealer);
-		
-		
+		if (player.getPlayerHandValue() == 21 || dealer.getDealerHandValue() == 21) {
+			int winnerValue = 0;
+			if (player.getPlayerHandValue() > dealer.getDealerHandValue()) {
+				winnerValue = player.getPlayerHandValue();
+				System.out.println("Player1 won with " + winnerValue);
+
+			} 
+			else {
+				winnerValue = dealer.getDealerHandValue();
+				System.out.println("Dealer won with " + winnerValue); 
+			}
+		}
 	}
 
 }

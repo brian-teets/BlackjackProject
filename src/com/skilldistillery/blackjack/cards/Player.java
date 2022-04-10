@@ -20,20 +20,21 @@ public class Player {
 		this.playerHand = playerHand;
 	}
 	
-	public void getPlayerHandValue() {
-		this.playerHand.getHandValue(); 
+	public int getPlayerHandValue() {
+		int total = this.playerHand.getHandValue(); 
+		return total;
 	}
 	
 	public void clearPlayerHand() {
 		this.playerHand.clear();
 	}
 	
-	public void displayPlayerHand() {
-		System.out.println( playerHand.toString() + " currently has " + playerHand.getHandValue() ); 
+	public String displayPlayerHand() {
+		return "Player1 currently has " + playerHand.getHandValue(); 
 	}
 
 	@Override
 	public String toString() {
-		return "Player has current value of " + playerHand.getHandValue() + " in hand";
+		return "Player1 has " + playerHand.getHandValue() + " in hand";
 	}
 }
