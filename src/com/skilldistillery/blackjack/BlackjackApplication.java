@@ -9,9 +9,8 @@ public class BlackjackApplication {
 	}
 	
 	public void run() {
-		// TODO: upon new game, call dealNewHand() and deal to player and dealer 
-		
 		gameGreeting();
+		// TODO: upon new game, call dealNewHand() and deal to player and dealer 
 		
 	}
 	
@@ -25,6 +24,10 @@ public class BlackjackApplication {
 		System.out.println("       $                           $");
 		System.out.println("       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		System.out.println();
+	}
+	
+	public void gameSimulator() {
+		
 	}
 
 }
