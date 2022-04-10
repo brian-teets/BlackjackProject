@@ -19,7 +19,7 @@ public abstract class Hand {
 	}
 
 	public List<Card> getHandOfCards() {
-		return handOfCards;
+		return handOfCards; 
 	}
 
 	public void setHandOfCards(List<Card> handOfCards) {

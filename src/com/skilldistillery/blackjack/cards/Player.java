@@ -30,7 +30,7 @@ public class Player {
 	}
 	
 	public String displayPlayerHand() {
-		return "Player1 currently has " + playerHand.getHandValue(); 
+		return "Player1 currently has " + playerHand.handOfCards; 
 	}
 
 	@Override
