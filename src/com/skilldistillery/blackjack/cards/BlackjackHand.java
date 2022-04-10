@@ -35,6 +35,8 @@ public class BlackjackHand extends Hand {
 		// When either the player's hand OR the dealer's hand goes 
 			// over value of 21
 		if( getHandValue() > 21) {
+			System.out.println("Sorry, your current hand value is " 
+					+ getHandValue() +  " , so you busted."); 
 			return true;
 		}
 		else {

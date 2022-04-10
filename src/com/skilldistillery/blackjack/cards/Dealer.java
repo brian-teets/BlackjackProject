@@ -22,11 +22,22 @@ public class Dealer extends Player {
 		deck.shuffleDeck();
 	}
 	
-	public void dealNewHand(Player player) { 
+	public void dealNewHandToPlayer(Player player) { 
 		// per Blackjack rules, player and dealer begin with 2 cards 
 		for(int i = 0; i < 2; i ++) {
 			player.addToHand( deck.dealCard() );  
 		}
+		System.out.println("Player has " + this.playerHand);
+	}
+	
+	public void dealNewHandToDealer(Player player) { 
+		// per Blackjack rules, player and dealer begin with 2 cards 
+		for(int i = 0; i < 2; i ++) {
+			player.addToHand( deck.dealCard() );  
+		}
+		System.out.println("Dealer has " + 
+		this.playerHand.handOfCards.get(1)); 
+		// trying to only show dealer's second card 
 	}
 	
 	public void dealACard(Player player) {
