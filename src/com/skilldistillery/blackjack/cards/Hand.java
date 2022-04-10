@@ -7,6 +7,7 @@ public abstract class Hand {
 	protected List<Card> handOfCards;
 
 	public Hand() {
+		
 	}
 
 	public void addCard(Card card) {
@@ -29,7 +30,7 @@ public abstract class Hand {
 
 	@Override
 	public String toString() {
-		return "Player has a current value of " + handOfCards + " in hand";
+		return "current value of " + handOfCards + " in hand";
 	}
 
 }

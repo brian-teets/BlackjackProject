@@ -2,14 +2,14 @@ package com.skilldistillery.blackjack.cards;
 
 public class Player {
 	// Has-A hand
-	protected BlackjackHand playerHand;
+	protected Hand playerHand;
 	
 	public Player() {
 		this.playerHand = new BlackjackHand(); 
 	}
 
 	public BlackjackHand getPlayerHand() {
-		return playerHand;
+		return (BlackjackHand)playerHand; 
 	}
 	
 	public void addToHand(Card card) {
@@ -34,6 +34,6 @@ public class Player {
 
 	@Override
 	public String toString() {
-		return "Player has current value of " + playerHand + " in hand";
+		return "Player has current value of " + playerHand.getHandValue() + " in hand";
 	}
 }

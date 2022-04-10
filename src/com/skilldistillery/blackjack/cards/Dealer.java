@@ -11,7 +11,7 @@ public class Dealer extends Player {
 	}
 
 	public BlackjackHand getDealerHand() {
-		return playerHand; 
+		return (BlackjackHand)playerHand; 
 	}
 	
 	public void getDeck() {
@@ -27,7 +27,7 @@ public class Dealer extends Player {
 		for(int i = 0; i < 2; i ++) {
 			player.addToHand( deck.dealCard() );  
 		}
-		System.out.println("Player has " + this.playerHand);
+		System.out.println(player); 
 	}
 	
 	public void dealNewHandToDealer(Player player) { 
@@ -36,7 +36,8 @@ public class Dealer extends Player {
 			player.addToHand( deck.dealCard() );  
 		}
 		System.out.println("Dealer has " + 
-		this.playerHand.handOfCards.get(1)); 
+		this.playerHand.handOfCards.get(1) + 
+		"and has one card hidden."); 
 		// trying to only show dealer's second card 
 	}
 	

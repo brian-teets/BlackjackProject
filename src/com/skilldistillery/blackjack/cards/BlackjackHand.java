@@ -1,10 +1,12 @@
 package com.skilldistillery.blackjack.cards;
 
+import java.util.ArrayList;
+
 public class BlackjackHand extends Hand {
 
-	public BlackjackHand() {
-		
-	} 
+	 public BlackjackHand() {
+		 this.handOfCards = new ArrayList<>();
+	 }
 
 	@Override
 	public int getHandValue() {
@@ -13,22 +15,6 @@ public class BlackjackHand extends Hand {
 			total += card.getValue();
 		}
 		return total; 
-	}
-	
-	@Override
-	public void addCard(Card card) {
-		
-	}
-
-	@Override
-	public void clear() {
-		
-	}
-
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
 	}
 	
 	public boolean isBust() { 
