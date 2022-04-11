@@ -101,7 +101,7 @@ public class BlackjackApplication {
 
 					} else if (dealer.getDealerHandValue() >= 17) {
 						System.out.println();
-						System.out.println("Dealer's current hand value is " + dealer.getDealerHandValue());
+						System.out.println("Dealer's current hand value is " + dealer.getDealerHandValue() + ", so dealer must stay.   ");
 						if (dealer.getDealerHand().isBust() == true) {
 							System.out.println("Dealer busted. You win.");
 							System.out.println("Restart the game to play again.");
