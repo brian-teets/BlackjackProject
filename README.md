@@ -86,7 +86,7 @@ You will be given either a pass or fail based on whether your code works given a
 
 ### Lessons Learned 
 
-* I gained practice working with classes and practicing intentionally with building structure in an Object-Oriented manner.
+* I gained practice working with classes and practicing intentionality with building structure in an Object-Oriented manner.
 * I knew next to nothing about the game of Blackjack before. I know more about Blackjack now than I did before! 
 
 [wiki]: https://en.wikipedia.org/wiki/Blackjack
