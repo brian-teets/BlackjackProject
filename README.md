@@ -62,14 +62,19 @@ You will be given either a pass or fail based on whether your code works given a
 * Download and install the .java file to local Eclipse workspace.
 * Run the program
 
-	* PLACEHOLDER
-	* PLACEHOLDER
+	* The player is dealt 2 cards to begin the game. The dealer is also dealt 2 cards, but hides one card to begin.
+		* The program evaluates the total hand value of both player and dealer. 
+		* If the starting hand value of the player OR dealer equals 21 without going over, then a winner is declared and the round is over.
+		* If a winner is not yet declared, then game play continues.
+	* Total dealer hand value is revealed. The player decides whether to hit(take another card) or stay(and not take another card yet).
+	* Game play continues.
+	* The player may choose to play another round. 
 		
 
 ### Technologies / Skills Used 
 
 * Java
-* OO classes
+* OO class structure
 * Eclipse
 * git 
 * GitHub 
@@ -78,6 +83,7 @@ You will be given either a pass or fail based on whether your code works given a
 
 ### Lessons Learned 
 
-* PLACEHOLDER 
+* OO class structure
+* More on Blackjack
 
 [wiki]: https://en.wikipedia.org/wiki/Blackjack
