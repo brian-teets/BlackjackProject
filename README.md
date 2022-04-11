@@ -68,6 +68,9 @@ You will be given either a pass or fail based on whether your code works given a
 		* If a winner is not yet declared, then game play continues.
 	* Total dealer hand value is revealed. The player decides whether to hit(take another card) or stay(and not take another card yet).
 	* Game play continues.
+		* If dealer hand value is greater than or equal to 17, dealer must stay - in this implementation that means the dealer object just doesn't make any additional method calls to add another card to their current hand.
+		* If dealer hand is less than 17, then dealer must hit - in this implementation, that means the dealer object makes another method call to add another card to their current hand. 
+		* Player may continue to hit or stay ... or hit again until busting. 
 	* The player may choose to play another round. 
 		
 
@@ -83,7 +86,7 @@ You will be given either a pass or fail based on whether your code works given a
 
 ### Lessons Learned 
 
-* OO class structure
-* More on Blackjack
+* I gained practice working with classes and practicing intentionally with building structure in an Object-Oriented manner.
+* I knew next to nothing about the game of Blackjack before. I know more about Blackjack now than I did before! 
 
 [wiki]: https://en.wikipedia.org/wiki/Blackjack
