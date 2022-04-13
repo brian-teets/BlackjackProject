@@ -66,13 +66,13 @@ public class BlackjackApplication {
 					if (player.getPlayerHandValue() > dealer.getDealerHandValue()) {
 //						winnerValue = player.getPlayerHandValue();
 						System.out.println("Player1 won with " + player.getPlayerHandValue());
-						System.out.println("Restart the game to play again.");
+//						System.out.println("Restart the game to play again.");
 						keepGoing = false;
 						break;
 					} else if (dealer.getDealerHandValue() > player.getPlayerHandValue()) {
 //						winnerValue = dealer.getDealerHandValue();
 						System.out.println("Dealer won with " + dealer.getDealerHandValue());
-						System.out.println("Restart the game to play again.");
+//						System.out.println("Restart the game to play again.");
 						keepGoing = false;
 						break;
 					}
@@ -88,7 +88,7 @@ public class BlackjackApplication {
 							System.out.println("Player1's new hand value is " + player.getPlayerHandValue());
 							if (player.getPlayerHand().isBust() == true) {
 								System.out.println("Sorry Player, you busted!");
-								System.out.println("Restart the game to play again.");
+//								System.out.println("Restart the game to play again.");
 								keepGoing = false;
 								break;
 							}
@@ -99,18 +99,19 @@ public class BlackjackApplication {
 									+ player.getPlayerHandValue());
 							System.out.println("Dealer's current hand value is " + dealer.getDealerHandValue());
 							playerPlaying = false;
+							continue;
 
 						}
 					} else if (playerPlaying == false) {
-						if (dealer.getDealerHandValue() < 16) {
+						if (dealer.getDealerHandValue() < 17) {
 							System.out.println();
 							System.out.println(
 									"Dealer's hand value is " + dealer.getDealerHandValue() + ", so dealer must hit.");
 							dealer.dealACard(dealer);
 							System.out.println("Dealer's new value is " + dealer.getDealerHandValue());
 							if (dealer.getDealerHand().isBust() == true) {
-								System.out.println("Dealer busted. You win.");
-								System.out.println("Restart the game to play again.");
+								System.out.println("Dealer busted. You win!");
+//								System.out.println("Restart the game to play again.");
 								keepGoing = false;
 								break;
 							}
@@ -142,6 +143,7 @@ public class BlackjackApplication {
 				}
 			} // end of inner while loop
 
+			System.out.println();
 			System.out.println("Do you want to play again?  (Y / N)   ");
 			keepPlaying = scanner.nextLine();
 			if (keepPlaying.equalsIgnoreCase("N")) {

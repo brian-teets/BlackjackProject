@@ -62,15 +62,15 @@ You will be given either a pass or fail based on whether your code works given a
 * Download and install the .java file to local Eclipse workspace.
 * Run the program
 
-	* The player is dealt 2 cards to begin the game. The dealer is also dealt 2 cards, but hides one card to begin.
-		* The program evaluates the total hand value of both player and dealer. 
-		* If the starting hand value of the player OR dealer equals 21 without going over, then a winner is declared and the round is over.
+	* The player and dealer and both dealt 2 cards in alternating fashion. 
+		* Then, the program evaluates the total hand value of both player and dealer. 
+		* If the starting hand value of the player OR dealer equals exactly 21, then a winner is declared and the round is over.
 		* If a winner is not yet declared, then game play continues.
-	* Total dealer hand value is revealed. The player decides whether to hit(take another card) or stay(and not take another card yet).
-	* Game play continues.
-		* If dealer hand value is greater than or equal to 17, dealer must stay - in this implementation that means the dealer object just doesn't make any additional method calls to add another card to their current hand.
-		* If dealer hand is less than 17, then dealer must hit - in this implementation, that means the dealer object makes another method call to add another card to their current hand. 
-		* Player may continue to hit or stay ... or hit again until busting. 
+	* The player decides whether to hit(take another card) or stay(and not take another card yet).
+	* Player's round of play continues until choosing to `stay`.
+	* Dealer's hand value is revealed. If dealer's hand value is under 17, then dealer must hit. 
+	* Conditional logic checks if dealer or player busted, depending on who is in play. 
+	* A winner / loser is declared. 
 	* The player may choose to play another round. 
 		
 
@@ -87,6 +87,7 @@ You will be given either a pass or fail based on whether your code works given a
 ### Lessons Learned 
 
 * I gained practice working with classes and practicing intentionality with building structure in an Object-Oriented manner.
-* I knew next to nothing about the game of Blackjack before. I know more about Blackjack now than I did before! 
+* I knew very little about Blackjack before. While I am still no expert by any stretch of the imagination, this project has challenged me to implement Java conditionals and class structure to create game logic. 
+* I gained practice using nested while loops and creating break points.  
 
 [wiki]: https://en.wikipedia.org/wiki/Blackjack
